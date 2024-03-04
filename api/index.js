@@ -48,7 +48,6 @@ client.command("start", async (ctx) => {
   await ctx.reply(`Welcome Back @${(await (au)).user.username}!!`, {
     reply_parameters: { message_id: ctx.msg.message_id },
   })
-  await ctx.react('👋')
 });
 
 client.command("help", async (ctx) => {
@@ -100,7 +99,7 @@ client.hears(badword, async (ctx) => {
   const au = ctx.getAuthor();
   const c = ctx.getChat();
   const ci = ctx.msg.chat.id;
-  const message = await client.api.sendMessage(bot_channel_log, `BadWord:\n\nChatID: ${ci}\nfrom UserName: @${(await (au)).user.username}\nUserID: ${(await (au)).user.id}\nLink: ${(await c).invite_link}`, '👎');
+  const message = await client.api.sendMessage(bot_channel_log, `BadWord:\n\nChatID: ${ci}\nfrom UserName: @${(await (au)).user.username}\nUserID: ${(await (au)).user.id}\nLink: ${(await c).invite_link}`);
   console.log(message)
 })
 
