@@ -110,5 +110,5 @@ client.start(
   client.api.sendMessage(bot_channel_log, `Bot is online\n${log_1}`)
 );
 
-export default webhookCallback(client, "http");
+// export default webhookCallback(client, "http");
 
