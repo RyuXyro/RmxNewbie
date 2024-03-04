@@ -1,5 +1,5 @@
 {
-  "name": "3",
+  "name": "kazuoyuuka.bot",
   "version": "1.0.0",
   "description": "telegram bot using grammyjs framework",
   "main": "index.js",
