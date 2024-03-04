@@ -5,6 +5,7 @@ const { bot_dev_username } = require('./config.json'); // bot developer username
 const { bot_channel_log } = require('./config.json'); // channel log
 const { badword } = require('./data.json'); // some badword
 const client = new Bot(token);
+if (!token) throw new Error("BOT_TOKEN is unset");
 
 
 const log_1 = `
